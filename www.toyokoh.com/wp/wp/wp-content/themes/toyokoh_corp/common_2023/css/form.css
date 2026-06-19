@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+
+/* Clearfix
+=================================*/
+
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.clearfix {
+display: inline-block;
+}
+
+/* Hide from Mac IE \*/
+.clearfix {
+display: block;
+}
+* html .clearfix {
+height: 1%;
+}
+/* Hide from Mac IE */
+
+/* =========================================
+*  FRAME
+* ========================================= */
+
+form {
+margin-top: 20px;
+}
+
+form legend {
+display: none;
+}
+
+table {
+margin: 0 auto;
+}
+table th,
+table td {
+}
+table th {
+text-align: left;
+}
+
+table th span {
+margin-left: .5em;
+color: #f60;
+font-weight: bold;
+}
+
+table td {	
+}
+
+table td input {
+border: solid #737373 1px;
+padding: 4px 7px;
+}
+table td .err {
+background:#FEF9CD;
+}
+table td .err input {
+background: #f60;
+}
+table td .after.err {
+border-color: #f60;
+background: #fff !important;
+}
+table td .after.err input {
+border-color: #f60;
+background: #fff !important;
+}
+table td label {
+margin-right: 1em;
+}
+table td label input {
+margin-right: .3em;
+}
+
+p.submit {
+margin: 0 auto;
+padding-top: 2em;
+width: 600px;
+text-align: center;
+}
+
+
+
+.button {
+display: inline-block;
+outline: none;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+font: 14px/100% 'Noto Sans Japanese',serif;;
+padding: 1em 2em;
+color: #d7d7d7;
+border: solid 1px #333;
+background: #595757;
+	letter-spacing: 1px;
+}
+
+.button:hover {
+text-decoration: none;
+background: #000;
+}
+
+.button:active {
+position: relative;
+top: 1px;
+}
+
+p.copy {
+border-top: solid #ccc 1px;
+padding: 0 0 3em;
+text-align: center;
+}
+
+.wpcf7 input[type="submit"] {
+display: inline-block;
+outline: none;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+font: 14px/100% 'Noto Sans Japanese',serif;;
+padding: 1em 2em;
+color: #d7d7d7;
+border: solid 1px #333;
+background: #595757;
+	letter-spacing: 1px;
+}
+
+.wpcf7 .button:hover {
+text-decoration: none;
+background: #000;
+}
+
+.wpcf7 .button:hover {
+position: relative;
+top: 1px;
+}
+
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid #eeeeee;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+
+
+.checkbox input[type=checkbox]{
+  display: none;
+}
+
+.checkbox span.wpcf7-list-item {
+ margin-left: 0;
+}
+
+.checkbox  span.wpcf7-list-item ~ span.wpcf7-list-item {
+  margin-left: 0px;
+}
+
+/* spanの左側にボタンを配置するスペースを作る */
+.checkbox input[type=checkbox] + .wpcf7-list-item-label {
+  padding-left: 0;
+  display: inline-block;
+  position: relative;
+}
+
+/* 各パーツを作成 */
+.checkbox input[type=checkbox] + .wpcf7-list-item-label::after,
+.checkbox input[type=checkbox] + .wpcf7-list-item-label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 1px solid #AAAAAA;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+/* after上書き */
+.checkbox input[type=checkbox] + .wpcf7-list-item-label::after {
+  opacity: 0;
+  width: 10px;
+  height: 15px;
+  transform: rotate(45deg);
+  left: 5px;
+  border: none;
+  border-right: 3px solid #f18800;
+  border-bottom: 3px solid #f18800;
+}
+
+/*
+  checked状態
+  文字のcolorとボタンのopacityを変更
+*/
+.checkbox input[type=checkbox]:checked + .wpcf7-list-item-label {
+  color: #f18800;
+}
+.checkbox input[type=checkbox]:checked + .wpcf7-list-item-label::after {
+  opacity: 1;
+}
+
+
+span.wpcf7-list-item {
+display: block!important;
+}

@@ -1,0 +1,4 @@
+@import url(/assets/fonts/notosansjapanese.css);
+@import url("base.css") screen and (min-width: 769px);
+@import url("smart.css") screen and (max-width: 768px);
+@import url("form.css");

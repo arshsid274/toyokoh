@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+/*:root {
+  --xj-discro: #00b050;
+  --xj-result: #ff0000;
+  --xj-legal: #00b0f0;
+  --xj-ir: #cc66ff;
+  --xj-info: #ff9900;
+}*/
+.xj-year {
+  margin-bottom: 30px;
+}
+.xj-year select {
+  background-image: url(icon_arrow.png);
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: right 10px center;
+}
+.xj-category {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 30px;
+}
+.xj-category li {
+  text-align: center;
+  background: #fff;
+  flex: 1 0 0%;
+}
+.xj-category li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  color: #fff;
+  opacity: .6;
+  background: #4a4746;
+}
+.xj-category li a:hover, .xj-category li.active a {
+  opacity: 1;
+}
+.xj-section {
+  margin-bottom: 52px;
+}
+.xj-section-title {
+  /*font-size: 24px;
+font-weight: normal;*/
+  font-size: 18px;
+  font-weight: bold;
+  color: #231815;
+  margin: 0 0 10px 0;
+}
+.xj-list {
+  list-style: none;
+}
+.xj-list-item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0 0;
+  line-height: 180%;
+}
+.xj-list-item:first-child {
+  padding-top: 0;
+}
+.xj-list-date {
+  width: 6em;
+}
+[class^="xj-list-label"] {
+  width: 6em;
+  text-align: center;
+  background: #4a4746;
+  color: #fff;
+  font-size: 0.777em;
+  margin-right: 20px;
+}
+.xj-list-title {
+  flex: 1 0 0%;
+}
+.xj-list-title a, .xj-library a {
+  color: #231815;
+}
+.xj-library {
+  list-style: none;
+}
+.xj-library-title {
+  line-height: 180%;
+}
+.page-ir-notice .xj-list-item{
+  padding-bottom: 20px;
+}
+.xj-icon-pdf {
+  background-image: url("icon_pdf.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 1.25em;
+  margin-left: .25em;
+  background-size: 1em;
+}
+.xj-icon-blank {
+  background-image: url("icon_blank.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 1.25em;
+  margin-left: .25em;
+  background-size: 1em;
+}
+@media screen and (max-width:768px) {
+  .xj-category {
+    gap: 2px;
+  }
+  .xj-category li {
+    text-align: center;
+    background: #fff;
+    flex: 1 0 calc(50% - 2px);
+  }
+  .xj-section {
+    margin-bottom: 30px;
+  }
+  .xj-section-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+  .xj-list-title {
+    flex: 1 0 100%;
+  }
+}
+.xj-graph {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.xj-graph-item {
+  background: #fff;
+  padding: 20px 25px;
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+}
+.xj-graph-title {
+  /*font-size: 24px;*/
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.xj-graph-uint {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.xj-graph-figure {
+	text-align: center;
+}
+.xj-graph-figure img {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.xj_chart_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.xj_chart_table td {
+  border: 1px solid #999;
+  font-size: min(14px, 3.384vw);
+  padding: 0 2px;
+}
+.xj_chart_no_header td:first-child {
+  display: none;
+}
+.xj_chart_header, .xj_chart_header_first {
+  background: #ccc;
+  text-align: center;
+}
+.xj_chart_value {
+  text-align: right;
+}
+.xj-graph-summary {
+  overflow: auto;
+}
+.xj-graph-summary .xj_chart_value {
+  background: #fff;
+}
+.xj-graph-summary .xj_chart_header:first-child {
+  text-align: left;
+  white-space: nowrap;
+}
+.xj-graph-summary td {
+  padding: 0 .5em;
+}
+.xj-graph-note {
+  margin-top: 52px;
+}
+.xj-graph-note ul {
+  margin-top: 36px;
+}
+.xj-graph-note li {
+  list-style: none;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+.xj-graph-note li:first-child {
+  text-indent: 0;
+  padding-left: 0;
+}
+@media screen and (max-width:768px) {
+  .xj-graph-item {
+    width: 100%;
+    padding: 15px;
+  }
+  .xj-graph-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+}
+/* 英語ページ 251014追記 */
+.xj-category[lang=en] li a {
+    white-space: nowrap;
+}
+[lang=en] [class^="xj-list-label"] {
+    width: 11em;
+}

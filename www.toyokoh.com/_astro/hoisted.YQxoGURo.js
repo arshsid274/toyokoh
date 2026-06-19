@@ -1,0 +1,1 @@
+import{P as o,l as b}from"./LanguageButton.astro_astro_type_script_index_0_lang.Bw8qwCtD.js";import"./PageTitle.astro_astro_type_script_index_0_lang.CzT-votQ.js";(class extends o{onInit(){b("#hubspotForm","7756396","098bcf7a-51e6-4f8f-be90-9835dd9ceb14"),b("#hubspotFormEn","7756396","18b03b3b-8c3b-48b3-8332-f7099f1feb85")}}).register();

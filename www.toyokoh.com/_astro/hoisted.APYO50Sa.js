@@ -1,0 +1,1 @@
+import{P as r}from"./LanguageButton.astro_astro_type_script_index_0_lang.Bw8qwCtD.js";import"./PageTitle.astro_astro_type_script_index_0_lang.CzT-votQ.js";import"./VideoAuto.astro_astro_type_script_index_0_lang.Cg2si2Zn.js";(class extends r{}).register();
